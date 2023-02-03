@@ -1,38 +1,44 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: rgb(233, 191, 191);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.parent {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
 }
 
-.App-link {
-  color: #61dafb;
+
+.repo-info {
+	padding: 10px 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.repo-info .card {
+	padding: 15px;
+	text-align: left;
+	/* padding-left: 10px; */
+	margin: 10px 10px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
 }
+.repo-info div .repo-info-top h3 {
+	font-size: 1.4rem;
+}
+
+.repo-info div .repo-info-top h3 a {
+	margin-left: 7px;
+	color: black;
+}
+
+.card p {
+	margin-bottom: 1rem;
+}
+
