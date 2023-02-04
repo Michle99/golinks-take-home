@@ -40,5 +40,6 @@ body {
 
 .card p {
 	margin-bottom: 1rem;
+	flex-wrap: wrap;
 }
 
